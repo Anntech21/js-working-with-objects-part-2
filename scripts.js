@@ -158,7 +158,7 @@ const person = {
 };
 
 // For the following instructions, you will be changing the values of
-// the person object. You will not be changing the code above, but you
+//p the person object. You will not be changing the code above, but you
 // will be writing code below that will change the values of the
 // person object.
 
@@ -166,25 +166,31 @@ const person = {
 // the console to make sure your changes worked.
 
 // Change the person's name to "Bob" and their age to 27.
+person.name = "Bob";
+person.age = 27;
 
 // Now, change the person's email address to "bob@example.com" and the
 // phone number to "987-654-3210".
+person.contact.email = "bob@example.com";
+person.contact.phone = "987-654-3210";
 
 // Now, change the person's zip code to "60601".
-
+person.address.zipCode = "60601";
 // Now, change the person's name to "Charlie".
-
+person.name = "Charlie"
 // Now, change the person's email address to "charlie@example.com".
-
+person.contact.email = "charlie@example.com";
 // Now, change Fred to be a 6-year-old rat and Gracey to be a
 // 4-year-old lizard.
-
+person.pets[1].name="Gracey";
+person.pets[1].type="lizard";
+person.pets[1].age = 6;
 /********************** Exercise 4 - Accessing Values (Deeply Nested Objects) **********************/
 
 // The following data is a real response from the Weather API service.
 
 // Get a sense of the "shape" of the object. What properties does it have? Does it have any nested objects or arrays?
-
+console.log();
 // When you're done looking it over, the instructions for the exercise are below the object.
 
 let weatherResponse = {
@@ -308,9 +314,13 @@ let currentVisibility;
 let hourlyWeatherDescription;
 let dailyMoonPhsse;
 
+console.log();
+
 /********************** Exercise 5 - Building Objects **********************/
 
 // Looking at the design_profile image in the assets folder, how would
 // you build an object that reflect the data collected from the user?
 
 // Create the object below.
+
+console.log();
