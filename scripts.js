@@ -314,7 +314,11 @@ let currentVisibility;
 let hourlyWeatherDescription;
 let dailyMoonPhsse;
 
-console.log();
+//console.log();
+let currentTemperature = weatherResponse.current.temp;
+let currentVisibility = weatherResponse.current.visibility;
+let hourlyWeatherDescription = weatherResponse.hourly[0].weather[0].description;
+let dailyMoonPhsse = weatherResponse.daily[0].moon_phase;
 
 /********************** Exercise 5 - Building Objects **********************/
 
@@ -323,4 +327,14 @@ console.log();
 
 // Create the object below.
 
-console.log();
+//console.log();
+let personProfile = {
+  name: "Chelsea",
+  location: [ {
+  country: "United States",
+  state: "Wisconsin"} ],
+
+  about: "Hi, I am Chelsea. I am a movie fanatic from Wisconsin. I enjoy all types of movies, especially ones with a strong female lead or that involve Samuel L. Jackson",
+
+  movies: ["Free Willy", "Frozen", "Titanic", "Moonlight", "Up", "Pulp Fiction", "The Negotiator" ],
+};
