@@ -70,7 +70,6 @@ const car = {
 
 // Log the following values so that they print in the console without
 // writing the values directly—access them from the car object.
-
 // For example, if you want to log the color of the car, you would
 // write `console.log(car.color);`, or write `car.color` directly into
 // the console. You would _not_ write `console.log("black");` or
@@ -79,17 +78,26 @@ const car = {
 // have.)
 
 // 1. The model of the car.
+console.log(car.model);
 // 2. The year the car was made.
+console.log(car.year);
 // 3. The name of the dealership.
+console.log(car.dealership.name);
 // 4. The location of the dealership.
+console.log(car.dealership.location);
 // 5. The last feature listed for the car. (Keep in mind that the
 // extra space before the features key is a common practice for
 // readability and doesn't affect the evaluation of the object at
 // all!)
+console.log(car.features[0,2]);
 // 6. The name of the manager at the dealership.
+console.log(car.dealership.employees[2].name);
 // 7. The name of the first owner of the car.
+console.log(car.owners[0].name)
 // 8. The age of the first owner of the car.
+//console.log(owners[0].age)
 // 9. The type of pet Fred is.
+car.owners[0].pets[1].type
 
 /********************** Exercise 2 - Accessing Values (Collections) **********************/
 
@@ -103,7 +111,7 @@ var catsForAdoption = [
 // catsForAdoption array.
 
 // Log the name of the first cat so that it prints in the console.
-
+console.log(catsForAdoption[0].name);
 // Log the string "Gracey is a 12 year old cat with white fur." so
 // that it prints in the console. Make sure to use the values from the
 // Gracey object for the dynamic values, and don't just type the
@@ -112,10 +120,12 @@ var catsForAdoption = [
 // concatenation if you're rusty on how to put values into strings.
 // Or, for a more advanced syntax, research and use string
 // interpolation.
+console.log(catsForAdoption[2].name + "is a" ,catsForAdoption[2].age+"year old cat with",catsForAdoption[2].furColor+" fur");
 
 // Log the string "Gracey, Angel, and Kerry are ready to be adopted!"
 // to the console. Same note from above about dynamic and static
 // values.
+console.log(catsForAdoption[2].name + ","+ catsForAdoption[0].name + ", and " + catsForAdoption[1].name + " are ready to be adopted");
 
 /********************** Exercise 3 - Changing Values In Nested Objects **********************/
 
